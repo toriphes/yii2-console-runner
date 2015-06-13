@@ -74,7 +74,6 @@ class Runner extends Component
      */
     public function run($cmd, &$output = '')
     {
-        var_dump($this->buildCommand($cmd));
         $handler = popen($this->buildCommand($cmd), 'r');
 
         while(!feof($handler))
