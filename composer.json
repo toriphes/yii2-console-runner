@@ -1,0 +1,22 @@
+{
+    "name": "toriphes/yii2-console-runner",
+    "description": "Runs console command in yii web application",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "console", "runner", "web", "application"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Giulio Ganci",
+            "email": "giulioganci@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "yiisoft/yii2": ">=2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "toriphes\\console\\": ""
+        }
+    }
+}
