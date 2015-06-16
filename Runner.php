@@ -93,6 +93,6 @@ class Runner extends Component
      */
     protected function buildCommand($cmd)
     {
-        return PHP_BINDIR . '/php ' . Yii::getAlias($this->yiiscript) . ' ' . $cmd . ' 2>&1';
+        return PHP_BINDIR . '/php ' . Yii::getAlias($this->yiiscript) . ' ' . $cmd . ' --no-color 2>&1';
     }
 }
