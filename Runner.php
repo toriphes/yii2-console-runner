@@ -52,6 +52,11 @@ class Runner extends Component
     public $yiiscript;
 
     /**
+     * @var string path to php executable
+     */    
+    public $phpexec;
+
+    /**
      * @inheritdoc
      */
     public function init()
@@ -93,6 +98,20 @@ class Runner extends Component
      */
     protected function buildCommand($cmd)
     {
-        return PHP_BINDIR . '/php ' . Yii::getAlias($this->yiiscript) . ' ' . $cmd . ' --no-color 2>&1';
+        return $this->getPHPExecutable() . ' ' . Yii::getAlias($this->yiiscript) . ' ' . $cmd . ' --no-color 2>&1';
+    }
+
+    /**
+     * If property $phpexec is set it will be used as php executable
+     *
+     * @return string path to php executable
+     */
+    public function getPHPExecutable()
+    {
+        if($this->phpexec) {
+            return $this->phpexec;
+        }
+
+        return PHP_BINDIR . '/php';
     }
 }
