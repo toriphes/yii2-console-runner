@@ -1,5 +1,6 @@
 yii2-console-runner
 ========================
+[![Latest Stable Version](https://poser.pugx.org/toriphes/yii2-console-runner/v/stable)](https://packagist.org/packages/toriphes/yii2-console-runner) [![Total Downloads](https://poser.pugx.org/toriphes/yii2-console-runner/downloads)](https://packagist.org/packages/toriphes/yii2-console-runner) [![Latest Unstable Version](https://poser.pugx.org/toriphes/yii2-console-runner/v/unstable)](https://packagist.org/packages/toriphes/yii2-console-runner) [![License](https://poser.pugx.org/toriphes/yii2-console-runner/license)](https://packagist.org/packages/toriphes/yii2-console-runner)
 
 This is component for running console command in yii2 web applications
 
