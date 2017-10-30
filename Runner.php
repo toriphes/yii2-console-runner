@@ -98,7 +98,7 @@ class Runner extends Component
      */
     protected function buildCommand($cmd)
     {
-        return $this->getPHPExecutable() . ' ' . Yii::getAlias($this->yiiscript) . ' ' . $cmd . ' --no-color 2>&1';
+        return $this->getPHPExecutable() . ' ' . Yii::getAlias($this->yiiscript) . ' ' . $cmd . ' 2>&1';
     }
 
     /**
