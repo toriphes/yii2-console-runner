@@ -112,6 +112,6 @@ class Runner extends Component
             return $this->phpexec;
         }
 
-        return PHP_BINDIR . '/php';
+        return PHP_BINARY;
     }
 }
